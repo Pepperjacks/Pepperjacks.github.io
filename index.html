@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<body>
-		<h1>Hello World</h1>
-		<p>I'm hosted with GitHub Pages.</p>
-		<p>Let's see if we can access the <a href="Tables/Jdk7u21">Jdk7u21 table</a>.</p>
+		<h1>RCE Tables Repository</h1>
+		<p>This site hosts a number of tables representing the presence of remote code execution vulnerabilities in Java deserialization when combining versions of the Java Virtual Machine and versions of libraries. Each table corresponds to a payload of the research tool <a href=https://github.com/frohoff/ysoserial>ysoserial</a>, which can be utilized to detect these vulnerabilities. As such, the libraries tested for each payload are the libraries included in each ysoserial attack, though there are a couple that don't use any libraries at all.
+		
+		For each table, the rows represent a version of the JVM (218 in total), and the columns represent a version of a library. If the combination of these two led to the presence of an RCE vulnerability during deserialization, the cell will be colored red. If not, the cell will be colored green.</p>
+		
+		<h2><a href="Tables/BeanShell1">BeanShell1</a></h2>
+		<p>Libraries included: BeanShell.</p>
 	</body>
 </html>
